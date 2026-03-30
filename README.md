@@ -30,6 +30,7 @@ Divisão (/)
 
 
 Aplicações de calculadora geralmente seguem esse padrão de operações básicas como núcleo funcional .
+A conta no projeto é realizada substituindo o número no visor, e não reproduzindo a conta por extenso. Após um operador ser selecionado, o número será substituido por 0, até que você selecione o próximo da operação.
 
 🧠 Gerenciamento de Estado
 
@@ -61,5 +62,6 @@ Abra o projeto no Android Studio
 
 Execute em um emulador ou dispositivo físico
 
+<img src="img.jpeg" width="300"/>
 
 Desenvolvido por Afonso Luiz

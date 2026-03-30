@@ -63,31 +63,33 @@ fun CalculadoraUI(modifier: Modifier = Modifier) {
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 BotaoOp("+", Modifier.weight(1f)) {
-                    n1 = tela
-                    tela = ""
-                    operacao = "+"
+                    if (tela.isNotEmpty()) {
+                        n1 = tela
+                        operacao = "+"
+                        tela = ""
+                    }
                 }
                 BotaoOp("-", Modifier.weight(1f)) {
-                    n1 = tela
-                    tela = ""
-                    operacao = "-"
+                    if (tela.isNotEmpty()) {
+                        n1 = tela
+                        operacao = "-"
+                        tela = ""
+                    }
                 }
                 BotaoOp("*", Modifier.weight(1f)) {
-                    n1 = tela
-                    tela = ""
-                    operacao = "*"
+                    if (tela.isNotEmpty()) {
+                        n1 = tela
+                        operacao = "*"
+                        tela = ""
+                    }
                 }
                 BotaoOp("/", Modifier.weight(1f)) {
-                    n1 = tela
-                    tela = ""
-                    operacao = "/"
+                    if (tela.isNotEmpty()) {
+                        n1 = tela
+                        operacao = "/"
+                        tela = ""
+                    }
                 }
-                BotaoOp("C", Modifier.weight(1f)) {
-                    tela = ""
-                    n1 = ""
-                    operacao = ""
-                }
-            }
 
             Spacer(modifier = Modifier.height(16.dp))
 
